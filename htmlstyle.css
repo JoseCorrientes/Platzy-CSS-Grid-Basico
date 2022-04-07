@@ -1,0 +1,149 @@
+ *{
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    font-size: 10px;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.grilla1 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: minmax(300px,2fr) 3fr;
+    grid-auto-rows: 400px;
+}
+
+.heroimg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info {
+    margin-left: 70px;
+    align-self: center;
+}
+
+.infoText {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.infoDescText {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.infoBoton {
+    background-color: rgb(255,142,4);
+    border: none;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition-property: background-color, color;
+    transition-duration: .2s, 1s;
+    cursor: pointer; cursor: hand;
+}
+.infoBoton:hover {
+    background-color: black;
+    color: white;
+}
+
+.infoBoton:active {
+    background-color: white;
+    border: none;
+    color: black;
+    box-shadow: 5px 10px 10px grey;
+}
+
+
+
+.grilla2 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 200px));
+    grid-auto-rows: 1fr;
+    gap: 25px;
+    justify-content: center;
+}
+
+.imagenes { 
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 8px 8px 10px darkgrey;
+}
+
+
+.video {
+    grid-area: 1/1/3/3;
+    object-fit: cover;
+} 
+
+.items {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.titulo {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.grilla3 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 200px));
+    justify-content: center;
+}
+
+.imagesFooterContenedor {
+    background-color:rgb(253,236,233);
+    box-shadow: 8px 8px 10px darkgrey;
+    border: none;
+    border-radius: 25px;
+    margin:10px;
+}
+
+.imagesFooter {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+@media screen and (max-width: 768px ) {
+    .heroimg {
+        display:none;
+    }
+
+    .grilla1 {
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
+    }
+
+    .grilla2 { 
+        grid-template-columns: repeat(auto-fill, minmax(75px, 100px));
+    }
+
+}
